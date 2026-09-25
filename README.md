@@ -2,10 +2,6 @@
 
 💬 Ask a question in plain English. 🔍 Get back a SQL query and real results from the database. No SQL knowledge required.
 
-> **Audience:** No prior knowledge of LLMs or vector databases is assumed.
-
----
-
 ## 📚 Table of Contents
 
 1. [🤔 What Does This Project Do?](#1-what-does-this-project-do)
@@ -357,7 +353,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser and start as
 | Variable | Default | Description |
 |---|---|---|
 | `OPENAI_API_KEY` | *(required)* | Your OpenAI API key. Get one at [platform.openai.com](https://platform.openai.com). |
-| `OPENAI_MODEL` | `gpt-4o` | The chat model used to generate SQL. |
+| `OPENAI_MODEL` | The chat model used to generate SQL. |
 | `DATABASE_URL` | `sqlite:///./data/olist.db` | SQLAlchemy connection string. Use `postgresql://...` for Postgres. |
 | `CHROMA_PERSIST_DIR` | `./chroma_store` | Directory where ChromaDB persists vector embeddings. |
 | `EMBEDDING_MODEL` | `text-embedding-3-small` | OpenAI embedding model used for both indexing and retrieval. |
